@@ -1,0 +1,121 @@
+body{
+    background-color: black;
+}
+
+.container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 320px;
+    height: 500px;
+    gap: 10px;
+    place-items: center;
+    margin: auto;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number{
+    background-color: #1c1c1c;
+    border: 2px solid #1c1c1c;
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.numbergray{
+    background-color:#D4D4D2;
+    border: 2px solid #d4d4d2;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.numberorange{
+    background-color:#ff9500;
+    border: 2px solid #ff9500;
+    font-size: 40px;
+    font-weight: 750;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer; 
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.main{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;}
+
+  input{
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:350px;
+    margin: 0 auto;
+    font-weight: bolder;
+    border-radius: 12px;
+    overflow-wrap: break-word;
+}
+
+h1{
+font-family: 'Courier New', Courier, monospace;
+font-size: 50px;
+text-align: center;
+color: white;
+}
+
+.empty{
+    background-color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.number:hover{
+    color:  white;
+    box-shadow: -3px 0 #1c1c1c, 0 3px #1c1c1c, 3px 0 #1c1c1c, 0 -3px #1c1c1c;
+}
+
+@media only screen and (max-width: 700px)
+{
+    input{
+        width: 250px;
+    }
+    .number .numbergray .numberorange{
+        text-align: center;
+    }
+}
